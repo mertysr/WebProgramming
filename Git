@@ -4,6 +4,8 @@ git commit -m "initial commit"
 ---
 git remote add origin link
 git push -u origin master
+git config --global user.email "mert.yasar.karadag@gmail.com"
+git config --global user.name "mertysr"
 ---
 git clone link
 bundle
