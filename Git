@@ -11,3 +11,29 @@ git push -u origin master
 git clone link
 bundle
 rake db:migrate
+---
+
+The same process is running somewhere
+
+To see which process used 3000 port and get the process pid type below command
+
+lsof -wni tcp:3000
+This will give the process which is using this port
+
+Sample result
+
+process1   12345   0.0  0.0  12343566  1972 s000  R+   11:17AM   0:00.00 grep puma
+You can kill this process by typing below command
+
+12345 this is the process ID
+
+kill -9 12345
+Now start server again
+
+
+sudo apt-get install imagemagick
+
+gem install bundler
+bundle install
+gem install bundler -v '1.17.3'
+ 
